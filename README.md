@@ -1,75 +1,41 @@
-# React + TypeScript + Vite
+# 🐝 Mundo das Abelhas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Trabalho final de **Front-end Frameworks** (Análise e Desenvolvimento de Sistemas).
+Aplicação web em **React.js com TypeScript** sobre o mundo das abelhas.
 
-Currently, two official plugins are available:
+## Integrantes e componentes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Integrante | Componentes | Páginas |
+|---|---|---|
+| Sarah | Navbar, Footer, Hero | Home, Comportamento, Hábitat |
+| Jéssica | FactCard, PassoApicultura, ItemEquipamento | Curiosidades, Apicultura |
+| Marília | BeeCard, BarraBusca, BeeModal | Espécies |
 
-## React Compiler
+## Requisitos do trabalho
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Componentes funcionais:** 9
+- **Páginas:** 6 (Home, Comportamento, Hábitat, Curiosidades, Apicultura, Espécies)
+- **Hooks:** useState, useEffect, useRef, useMemo
+- **Roteamento:** react-router-dom
+- **Linguagem:** TypeScript
 
-## Expanding the ESLint configuration
+## Como instalar e usar
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone o repositório:
+   ```
+   git clone https://github.com/rleao3718-png/Bee-react.git
+   ```
+2. Entre na pasta e instale as dependências:
+   ```
+   cd Bee-react
+   npm install
+   ```
+3. Rode o projeto:
+   ```
+   npm run dev
+   ```
+4. Abra o endereço mostrado no terminal (geralmente `http://localhost:5173`).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Telas principais
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+(prints das telas serão adicionados aqui)
